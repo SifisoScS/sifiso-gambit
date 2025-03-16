@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifiso Gambit - The AI Card Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <h1>Sifiso Gambit 🎴</h1>
+
+    <!-- Gameboard -->
+    <div id="gameboard">
+        <div id="players">
+            <h2>AI Players</h2>
+            <div id="ai-players"></div>
+        </div>
+
+        <div id="human-player">
+            <h2>Your Hand</h2>
+            <div id="human-hand"></div>
+        </div>
+    </div>
+
+    <!-- Game Log -->
+    <div id="game-log" class="panel">
+        <p>No game events yet...</p>
+    </div>    
+
+    <!-- Control Panel -->
+    <div id="controls">
+        <button onclick="playRound()">Play Round</button>
+        <button onclick="swapCard()">Swap Card</button>
+        <button onclick="viewRules()">View Rules</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
